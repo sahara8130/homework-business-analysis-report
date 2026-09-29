@@ -211,6 +211,26 @@ table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:15px}th{b
 .self-summary{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin:17px 0}.self-summary article{padding:17px 20px;background:#eef5ff;border-top:5px solid var(--blue)}.self-summary b{display:block;color:var(--blue);font-size:30px}.self-summary span{font-size:14px;font-weight:700}.self-funnel{display:grid;grid-template-columns:1fr 28px 1fr 28px 1fr 28px 1fr;gap:6px;align-items:center}.self-funnel article{min-height:112px;padding:16px;background:#eaf2ff;border-top:5px solid var(--blue)}.self-funnel article.last{background:#fff0e8;border-color:var(--orange)}.self-funnel strong{display:block;color:var(--blue);font-size:27px}.self-funnel .last strong{color:#c7522c}.self-funnel b{display:block;font-size:16px}.self-funnel small{font-size:12px;color:#66778a}.self-funnel i{font-style:normal;text-align:center;color:#8ea4bc;font-size:25px}.self-two{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-top:23px}.self-two>div{padding:20px;background:#f4f7fb}.self-two h3{font-size:19px;margin:0 0 14px}.self-two p{font-size:15px;line-height:1.65;margin:10px 0 0}.self-drag{display:flex;overflow:hidden;border-radius:5px}.self-drag span{display:flex;align-items:center;justify-content:center;min-height:49px;background:#2ca99b;color:#fff;text-align:center;font-size:13px;font-weight:800}.self-drag span:nth-child(2){background:#db8e3b}.self-drag span:nth-child(3){background:#a1afbd;font-size:11px}
 @media(max-width:1000px){.policy-sources,.tech-capabilities,.hint-ladder,.self-summary,.self-two,.ai-grid{grid-template-columns:1fr 1fr}.self-funnel{grid-template-columns:1fr}.self-funnel i{transform:rotate(90deg)}}
 @media print{.page{break-after:page}.industry-table td,.industry-table th{padding:6px 4px}.page-number{font-size:13px}}
+.idea-top{display:grid;grid-template-columns:1.16fr .84fr;gap:18px;margin-top:26px}
+.idea-top article{min-height:260px;padding:27px 30px;border-top:6px solid var(--blue);background:#f1f6fe}
+.idea-top .idea-belief{border-top-color:var(--orange);background:#fff5ee}
+.idea-label{display:block;color:var(--blue);font-size:17px;font-weight:900;letter-spacing:.04em}
+.idea-belief .idea-label{color:#b94a27}
+.idea-top h2{font-size:27px;line-height:1.48;margin:17px 0 13px;color:var(--deep)}
+.idea-belief h2{font-size:31px;color:#b94a27}
+.idea-top p{font-size:18px;line-height:1.6;margin:0;color:#425a74}
+.idea-principles-title{display:flex;align-items:baseline;gap:19px;margin:30px 0 16px;padding-bottom:10px;border-bottom:3px solid var(--blue)}
+.idea-principles-title p{margin:0;color:#52667e;font-size:17px}
+.idea-principles{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.idea-principles article{min-height:188px;padding:21px 20px 17px;background:#f6f9fd;border-left:5px solid #88a9d5}
+.idea-principles article:nth-child(2){border-left-color:#2d87cf}
+.idea-principles article:nth-child(3){border-left-color:#13967e}
+.idea-principles article:nth-child(4){border-left-color:#e17a4e}
+.idea-principles article>span{font-size:14px;font-weight:900;color:var(--blue)}
+.idea-principles h3{font-size:22px;line-height:1.3;margin:8px 0 11px;color:var(--deep)}
+.idea-principles p{font-size:16px;line-height:1.55;margin:0;color:#4b6178}
+@media(max-width:1000px){.idea-top{grid-template-columns:1fr}.idea-principles{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:650px){.idea-principles{grid-template-columns:1fr}.idea-principles-title{display:block}.idea-principles-title p{margin-top:6px}}
 </style></head>
 <body>
 <nav><strong>作业业务分析</strong><a href="#policy">看政策</a><a href="#user">看用户</a><a href="#industry">看行业</a><a href="#technology">看技术</a><a href="#self">看自己</a><a href="#overview">业务分析</a></nav>
@@ -309,8 +329,18 @@ table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:15px}th{b
 </div><div class="map-arrow">↓</div>
 <div class="map-synthesis"><span>核心业务机会</span><b>在孩子卡住时提供刚好够用的提示，帮助他自己完成下一步，而不是由工具接管整道题。</b></div>
 </section>
-<section class="page" id="idea"><div class="page-number" aria-label="第10页，共13页" contenteditable="false">10 / 13</div><div class="head"><div class="part">产品理念</div><h1><br></h1><div class="logo">步步高</div></div><div class="idea-quote"><small>产品理念</small>以孩子为中心，做孩子爱用的产品。</div>
-<div class="flow-principles"><div><b>产品边界 · 必须长期坚持</b><p>孩子主动求助或同意介入；从最小提示开始；关键步骤必须由孩子完成；孩子恢复作答就收回、适可而止；帮助随能力提升逐渐减少。</p></div><div><b>不为清单（三条不可替代）</b><p>不替孩子思考：不给答案、不代写；不替孩子承担启动与责任：不做监视型管控；不替孩子犯错试错：不做零思考空间的过度提示。</p></div></div></section>
+<section class="page" id="idea"><div class="page-number" aria-label="第10页，共13页" contenteditable="false">10 / 13</div><div class="head"><div class="part">产品理念</div><h1>让孩子自己把作业做下去</h1><div class="logo">步步高</div></div>
+<div class="idea-top">
+  <article class="idea-position"><span class="idea-label">01 业务定位</span><h2>面向被动补差、缺少独立完成作业能力的孩子，提供贯穿作业前、中、后的适度帮助。</h2><p>作业前帮助开始，卡住时提示下一步，完成后引导孩子自己检查和订正。</p></article>
+  <article class="idea-belief"><span class="idea-label">02 业务理念</span><h2>以孩子为中心，做孩子爱用的产品。</h2><p>尊重孩子的选择权、思考权和作答权，让帮助发生在孩子真正需要的时候。</p></article>
+</div>
+<div class="idea-principles-title"><span class="idea-label">03 原则</span><p>帮助孩子继续，关键动作始终由孩子完成。</p></div>
+<div class="idea-principles">
+  <article><span>01</span><h3>孩子主导</h3><p>由孩子发起求助或同意介入，保留选择与尝试的空间。</p></article>
+  <article><span>02</span><h3>帮助刚好够用</h3><p>先给提示，再按卡点分层引导；孩子能继续时及时退出。</p></article>
+  <article><span>03</span><h3>思考与作答归孩子</h3><p>不默认给完整答案；理解、书写、检查和订正由孩子完成。</p></article>
+  <article><span>04</span><h3>家长轻协同</h3><p>只在持续困难时提供必要支持，不把催促和监控当作产品价值。</p></article>
+</div></section>
 <section class="page" id="framework"><div class="page-number" aria-label="第11页，共13页" contenteditable="false">11 / 13</div><div class="head"><div class="part">业务框架</div><div class="logo">步步高</div></div>
 <div class="bf-wrap">
  <div class="bf-banner">
@@ -484,7 +514,7 @@ table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:15px}th{b
 
 <script>
 (function(){
-  const KEY='homework-business-analysis-edit-v5';
+  const KEY='homework-business-analysis-edit-v6';
   const main=document.querySelector('main');
   const toolbar=document.getElementById('editorToolbar');
   const status=document.getElementById('editStatus');
@@ -492,6 +522,18 @@ table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:15px}th{b
   const toastEl=document.getElementById('editToast');
   const publishedHTML=main.innerHTML;
   let savedHTML=localStorage.getItem(KEY);
+  if(!savedHTML){
+    const previous=localStorage.getItem('homework-business-analysis-edit-v5');
+    if(previous){
+      const preserved=document.createElement('div');
+      preserved.innerHTML=previous;
+      const oldIdea=preserved.querySelector('#idea');
+      const newIdea=main.querySelector('#idea');
+      if(oldIdea&&newIdea)oldIdea.replaceWith(newIdea.cloneNode(true));
+      savedHTML=preserved.innerHTML;
+      localStorage.setItem(KEY,savedHTML);
+    }
+  }
   let editing=false;
   if(savedHTML){main.innerHTML=savedHTML; status.textContent='已加载本机修改';}
   function toast(msg){toastEl.textContent=msg;toastEl.style.display='block';clearTimeout(window.__editToastTimer);window.__editToastTimer=setTimeout(()=>toastEl.style.display='none',1800)}
