@@ -217,6 +217,7 @@ table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:15px}th{b
 .idea-label{display:block;color:var(--blue);font-size:17px;font-weight:900;letter-spacing:.04em}
 .idea-belief .idea-label{color:#b94a27}
 .idea-top h2{font-size:27px;line-height:1.48;margin:17px 0 13px;color:var(--deep)}
+.idea-position h2{font-size:34px;line-height:1.35;margin:20px 0;color:var(--blue)}
 .idea-belief h2{font-size:31px;color:#b94a27}
 .idea-top p{font-size:18px;line-height:1.6;margin:0;color:#425a74}
 .idea-principles-title{display:flex;align-items:baseline;gap:19px;margin:30px 0 16px;padding-bottom:10px;border-bottom:3px solid var(--blue)}
@@ -333,7 +334,7 @@ table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:15px}th{b
 </section>
 <section class="page" id="idea"><div class="page-number" aria-label="第10页，共12页" contenteditable="false">10 / 12</div><div class="head"><div class="part">产品理念</div><h1>让孩子自己把作业做下去</h1><div class="logo">步步高</div></div>
 <div class="idea-top">
-  <article class="idea-position"><span class="idea-label">01 业务定位</span><h2>面向被动补差、缺少独立完成作业能力的孩子，提供贯穿作业前、中、后的适度帮助。</h2><p>作业前帮助开始，卡住时提示下一步，完成后引导孩子自己检查和订正。</p></article>
+  <article class="idea-position"><span class="idea-label">01 业务定位</span><h2>懂孩子、帮得刚刚好的作业助手</h2><p>面向被动补差、缺少独立完成作业能力的孩子；作业前帮他开始，卡住时提示下一步，做完后引导他自己检查和订正。</p></article>
   <article class="idea-belief"><span class="idea-label">02 业务理念</span><h2>以孩子为中心，做孩子爱用的产品。</h2><p>尊重孩子的选择权、思考权和作答权，让帮助发生在孩子真正需要的时候。</p></article>
 </div>
 <div class="idea-principles-title"><span class="idea-label">03 原则</span><p>帮助孩子继续，关键动作始终由孩子完成。</p></div>
@@ -431,7 +432,7 @@ table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:15px}th{b
 
 <script>
 (function(){
-  const KEY='homework-business-analysis-edit-v8';
+  const KEY='homework-business-analysis-edit-v9';
   const main=document.querySelector('main');
   const toolbar=document.getElementById('editorToolbar');
   const status=document.getElementById('editStatus');
@@ -440,17 +441,21 @@ table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:15px}th{b
   const publishedHTML=main.innerHTML;
   let savedHTML=localStorage.getItem(KEY);
   if(!savedHTML){
+    const previousV8=localStorage.getItem('homework-business-analysis-edit-v8');
     const previousV7=localStorage.getItem('homework-business-analysis-edit-v7');
     const previousV6=localStorage.getItem('homework-business-analysis-edit-v6');
-    const previous=previousV7||previousV6||localStorage.getItem('homework-business-analysis-edit-v5');
+    const previous=previousV8||previousV7||previousV6||localStorage.getItem('homework-business-analysis-edit-v5');
     if(previous){
       const preserved=document.createElement('div');
       preserved.innerHTML=previous;
-      if(!previousV7&&!previousV6){
+      if(!previousV8&&!previousV7&&!previousV6){
         const oldIdea=preserved.querySelector('#idea');
         const newIdea=main.querySelector('#idea');
         if(oldIdea&&newIdea)oldIdea.replaceWith(newIdea.cloneNode(true));
       }
+      const oldPosition=preserved.querySelector('#idea .idea-position');
+      const newPosition=main.querySelector('#idea .idea-position');
+      if(oldPosition&&newPosition)oldPosition.innerHTML=newPosition.innerHTML;
       const industry=preserved.querySelector('#industry');
       const conclusion=industry?.querySelector('.industry-takeaway');
       const common=industry?.querySelector('.common');
