@@ -347,7 +347,7 @@ table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:15px}th{b
 <section class="page" id="framework"><div class="page-number" aria-label="第11页，共12页" contenteditable="false">11 / 12</div><div class="head"><div class="part">业务框架</div><div class="logo">步步高</div></div>
 <div class="bf-wrap">
  <div class="bf-banner">
-  <h2>孩子卡题时的「作业思考教练」</h2><div class="bf-pills"><span>给刚好够用的引导</span><span>看见每一步进步</span></div>
+  <h2>懂孩子、帮得刚刚好的作业助手</h2>
  </div>
 
  <div class="bf-main">
@@ -389,7 +389,7 @@ table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:15px}th{b
 
  <div class="bf-side">
   <div class="side-box v-jump arrow">
-   <h5>价值跃迁（答案工具 → 学习助手）</h5>
+   <h5>产品价值（答案工具 → 学习助手）</h5>
    <ul>
     <li><b>替做 / 给答案</b> → 孩子自己完成关键一步</li>
     <li><b>完整讲题听完</b> → 最小提示后独立作答</li>
@@ -432,7 +432,7 @@ table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:15px}th{b
 
 <script>
 (function(){
-  const KEY='homework-business-analysis-edit-v9';
+  const KEY='homework-business-analysis-edit-v10';
   const main=document.querySelector('main');
   const toolbar=document.getElementById('editorToolbar');
   const status=document.getElementById('editStatus');
@@ -441,14 +441,15 @@ table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:15px}th{b
   const publishedHTML=main.innerHTML;
   let savedHTML=localStorage.getItem(KEY);
   if(!savedHTML){
+    const previousV9=localStorage.getItem('homework-business-analysis-edit-v9');
     const previousV8=localStorage.getItem('homework-business-analysis-edit-v8');
     const previousV7=localStorage.getItem('homework-business-analysis-edit-v7');
     const previousV6=localStorage.getItem('homework-business-analysis-edit-v6');
-    const previous=previousV8||previousV7||previousV6||localStorage.getItem('homework-business-analysis-edit-v5');
+    const previous=previousV9||previousV8||previousV7||previousV6||localStorage.getItem('homework-business-analysis-edit-v5');
     if(previous){
       const preserved=document.createElement('div');
       preserved.innerHTML=previous;
-      if(!previousV8&&!previousV7&&!previousV6){
+      if(!previousV9&&!previousV8&&!previousV7&&!previousV6){
         const oldIdea=preserved.querySelector('#idea');
         const newIdea=main.querySelector('#idea');
         if(oldIdea&&newIdea)oldIdea.replaceWith(newIdea.cloneNode(true));
@@ -456,6 +457,9 @@ table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:15px}th{b
       const oldPosition=preserved.querySelector('#idea .idea-position');
       const newPosition=main.querySelector('#idea .idea-position');
       if(oldPosition&&newPosition)oldPosition.innerHTML=newPosition.innerHTML;
+      const oldFramework=preserved.querySelector('#framework');
+      const newFramework=main.querySelector('#framework');
+      if(oldFramework&&newFramework)oldFramework.replaceWith(newFramework.cloneNode(true));
       const industry=preserved.querySelector('#industry');
       const conclusion=industry?.querySelector('.industry-takeaway');
       const common=industry?.querySelector('.common');
@@ -498,4 +502,5 @@ table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:15px}th{b
 
 
 
-</body></html>
+
+</body><div id="codex-browser-sidebar-comments-root" style="position: fixed; inset: 0px; pointer-events: none; z-index: 2147483647;"></div></html>
