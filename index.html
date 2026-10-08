@@ -249,6 +249,17 @@ table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:15px}th{b
 .choice-logic{margin-top:20px;padding:17px 19px;background:#eaf3ff}.choice-logic>b{color:var(--deep);font-size:18px}.choice-logic>div{display:flex;align-items:center;gap:9px;margin-top:12px;flex-wrap:wrap}.choice-logic span,.choice-logic strong{padding:9px 10px;background:#fff;color:#24405f;font-size:15px}.choice-logic strong{background:var(--blue);color:#fff}.choice-logic i{font-style:normal;color:var(--blue);font-size:23px;font-weight:800}
 .choice-note{margin:15px 0 0;color:#6c7e91;font-size:14px;line-height:1.55}
 @media(max-width:1000px){.choice-grid{grid-template-columns:1fr}.choice-grid article{min-height:0}}
+
+/* 2026-10-08: four-pain first-phase selection matrix */
+.selection-lead{margin:0 0 15px;font-size:17px;line-height:1.5;color:#53677f}.selection-lead b{color:var(--deep)}
+.selection-table-wrap{border:1px solid var(--line);overflow-x:auto}.selection-table{font-size:15px;table-layout:fixed;min-width:1180px}
+.selection-table th{padding:11px 10px;font-size:16px;line-height:1.35}.selection-table th small{font-weight:400;color:#d7e6f8;font-size:12px}
+.selection-table th:nth-child(1){width:19%}.selection-table th:nth-child(2){width:16%}.selection-table th:nth-child(3){width:19%}.selection-table th:nth-child(4){width:18%}.selection-table th:nth-child(5){width:13%}.selection-table th:nth-child(6){width:15%}
+.selection-table td{padding:11px 10px;font-size:15px;line-height:1.45;vertical-align:middle;background:#fff;color:#40546d}.selection-table td:first-child{width:auto;background:#f1f6fc;color:var(--deep);font-weight:800}
+.selection-table tr.selection-focus td{background:#dcefff!important;color:#0c3c78;font-weight:700;border-color:#b4d4f5}.selection-table tr.selection-focus td:first-child{border-left:5px solid var(--blue)}
+.selection-readout{margin-top:17px;padding:15px 18px;background:#f2f7fd}.selection-readout>b{display:block;margin-bottom:10px;color:var(--deep);font-size:18px}.selection-readout>div{display:grid;grid-template-columns:repeat(2,1fr);gap:8px 18px}.selection-readout p{margin:0;font-size:15px;line-height:1.45;color:#50657e}.selection-readout strong{color:var(--deep)}.selection-readout .selected{color:#0753bb}.selection-readout .selected strong{color:#0753bb}
+.selection-note{margin:12px 0 0;color:#6d7f91;font-size:13px;line-height:1.45}
+@media(max-width:1000px){.selection-readout>div{grid-template-columns:1fr}}
 </style></head>
 <body>
 <nav><strong>作业业务分析</strong><a href="#policy">看政策</a><a href="#user">看用户</a><a href="#industry">看行业</a><a href="#technology">看技术</a><a href="#self">看自己</a><a href="#overview">业务分析</a></nav>
@@ -288,15 +299,17 @@ table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:15px}th{b
 </div></div>
 
 <p class="table-note">引号为访谈中的孩子原话；行为、痛点、现有应对和需求由5个样本的重复现象归纳。样本覆盖用于本轮机会排序，不代表总体人群发生率。</p></section>
-<section class="page" id="pain-choice"><div class="page-number" aria-label="第5页，共13页" contenteditable="false">05 / 13</div><div class="head"><div class="part">02 看用户</div><h1>三个核心痛点，为什么先选“卡题”</h1><div class="logo">步步高</div></div>
-<div class="point green"><b>三类问题贯穿作业前、中、后；卡题时孩子会主动求助，也明确说过“给提示”，因此最适合作为首期验证入口。</b></div>
-<div class="choice-grid">
-<article><div class="choice-stage">作业前 · 开始难</div><h2>“还没玩够。”</h2><p><b>样本发现</b>：孩子迟迟坐不下，常由家长催着开始。</p><p><b>孩子可能接受的帮助</b>：把第一步拆小、降低开始门槛。</p><div class="choice-result">需要验证：孩子会不会主动使用启动帮助</div></article>
-<article class="choice-focus"><div class="choice-stage">作业中 · 卡题</div><h2>“妈妈我不会。” “给提示。”</h2><p><b>样本发现</b>：孩子停笔后求助家长或搜题；答案或完整讲解容易跳过自己的思考。</p><p><b>孩子明确表达</b>：先给提示，再让自己继续做。</p><div class="choice-result">首期优先：求助时刻明确，孩子有主动需求</div></article>
-<article><div class="choice-stage">作业后 · 不检查</div><h2>“写完了，那不用检查了。”</h2><p><b>样本发现</b>：孩子把“写完”当完成，错误多由家长指出。</p><p><b>孩子可能接受的帮助</b>：指出可疑处，让自己检查和订正。</p><div class="choice-result">需要验证：孩子愿不愿意主动回看</div></article>
-</div>
-<div class="choice-logic"><b>选择逻辑｜研究归纳 → 产品判断</b><div><span>三类问题都真实存在</span><i>→</i><span>卡题会触发即时求助</span><i>→</i><span>孩子提出“先给提示”</span><i>→</i><strong>先验证提示后能否自己接着做</strong></div></div>
-<p class="choice-note">依据：5户家庭访谈与作业观察；引号为用户原话，其余为研究归纳或产品判断。三类问题的总体发生率与相对频次尚未量化；首期选择不等于放弃作业前、后的问题。</p></section>
+<section class="page" id="pain-choice"><div class="page-number" aria-label="第5页，共13页" contenteditable="false">05 / 13</div><div class="head"><div class="part">02 看用户</div><h1>为什么首期选择“卡题”</h1><div class="logo">步步高</div></div>
+<div class="point green"><b>卡题不是凭痛点次数排第一，而是在四类问题里最能同时做到：求助信号看得见、学习机接得住、结果验得快、帮助不越界。</b></div>
+<p class="selection-lead">用同一把尺子比较四个具体痛点：<b>发生情况、学习机主场性、信号可识别性、验证周期、孩子边界。</b></p>
+<div class="selection-table-wrap"><table class="selection-table"><thead><tr><th>核心痛点</th><th>发生情况<br><small>访谈观察</small></th><th>学习机能否接住</th><th>信号能否识别</th><th>验证周期</th><th>孩子边界</th></tr></thead><tbody>
+<tr><td>我还没准备好开始</td><td>多户常见，放学后反复出现</td><td>弱：到点提醒容易变成家长催促的延伸</td><td>难：坐下或开机不代表进入状态</td><td>长：习惯改变需持续观察</td><td>易越界成催写、管控</td></tr>
+<tr class="selection-focus"><td>我卡住时，不知道下一步</td><td>同次作业遇难题时可能反复发生</td><td>强：可承接题库、搜题与批改场景</td><td>较清楚：孩子主动求助，结合停笔与作答判断</td><td>短：提示后能否独立接着做，当题可见</td><td>可只给下一步，不替孩子作答</td></tr>
+<tr><td>我一停下，很难自己接着写</td><td>分心或畏难时反复出现</td><td>中：部分属于作业节奏问题</td><td>部分可见：停笔原因仍需区分</td><td>中：要跨多段作业观察</td><td>易变成持续监督</td></tr>
+<tr><td>我写完后，不会检查</td><td>多个样本写完不主动回看</td><td>中：批改能力可提示可疑处</td><td>可见：写完与错误位置能识别</td><td>中：要看能否形成主动自查</td><td>不能把家长想查错当成孩子想使用</td></tr>
+</tbody></table></div>
+<div class="selection-readout"><b>逐项判断</b><div><p><strong>开始难</strong>：很普遍，但孩子未必会主动打开工具；先做容易变成“换个人催”。</p><p class="selected"><strong>卡题｜首期聚焦</strong>：孩子已举手求助，也说过“给提示”；先验证提示后能否自己完成关键一步。</p><p><strong>停下难继续</strong>：停笔既可能是分心，也可能是在思考；过早提醒容易打扰。</p><p><strong>不会检查</strong>：技术能找错，但检查尚未成为孩子主动提出的需求，先保留后续验证。</p></div></div>
+<p class="selection-note">依据：5户家庭访谈和作业观察；“给提示”为孩子原话。发生情况为定性研究归纳，其余比较为首期产品判断，尚无总体发生率或效果数据。首期聚焦卡题，不等于放弃作业前后的问题。</p></section>
 <section class="page" id="industry"><div class="page-number" aria-label="第6页，共13页" contenteditable="false">06 / 13</div><div class="head"><div class="part">03 看行业</div><h1><br></h1><div class="logo">步步高</div></div>
 
 <div class="point orange industry-takeaway"><b>行业现有方案更擅长完整地讲题，对于孩子卡题时给下一步提示的需求普遍没有满足。</b></div><div class="common"><b>共性：</b>都能把当前题讲完整，图示、语音和结构化步骤越来越成熟。<br><b>差异：</b>豆包爱学强在分步互动，千问强在概念关系解释，元宝强在题后方法沉淀。<br><b>共同缺口：</b>较少先判断孩子具体卡点，再用最小提示让孩子完成关键一步；“听懂”与“会做”之间仍缺验证。</div><div class="industry-lead"><b>直接竞品｜学习机讲题能力</b><span><br></span></div>
