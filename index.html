@@ -260,6 +260,14 @@ table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:15px}th{b
 .selection-readout{margin-top:17px;padding:15px 18px;background:#f2f7fd}.selection-readout>b{display:block;margin-bottom:10px;color:var(--deep);font-size:18px}.selection-readout>div{display:grid;grid-template-columns:repeat(3,1fr);gap:8px 18px}.selection-readout p{margin:0;font-size:15px;line-height:1.45;color:#50657e}.selection-readout strong{color:var(--deep)}.selection-readout .selected{color:#0753bb}.selection-readout .selected strong{color:#0753bb}
 .selection-note{margin:12px 0 0;color:#6d7f91;font-size:13px;line-height:1.45}
 @media(max-width:1000px){.selection-readout>div{grid-template-columns:1fr}}
+
+/* 2026-10-08: three core journey pains aligned with the following slide */
+.journey-legend .journey-core{background:#e8f4f0;color:#08745e;border:1px solid #b5dfd0}
+.journey-map .core-stage{background:#116b91;color:#fff}
+.journey-map .core-pain{box-shadow:inset 5px 0 0 #168d72}
+.journey-map .core-pain.key-cell{box-shadow:inset 5px 0 0 #e33b32}
+.journey-map .core-pain-label{display:block;color:#075e50;font-size:14px;line-height:1.35;margin-bottom:5px}
+.journey-map .core-pain.key-cell .core-pain-label{color:#a33120}
 </style></head>
 <body>
 <nav><strong>作业业务分析</strong><a href="#policy">看政策</a><a href="#user">看用户</a><a href="#industry">看行业</a><a href="#technology">看技术</a><a href="#self">看自己</a><a href="#overview">业务分析</a></nav>
@@ -284,14 +292,14 @@ table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:15px}th{b
 
 <p class="persona-standard-note">画像依据：5个家庭访谈与作业观察。引号为用户原话；其余为样本中重复出现的稳定特征归纳。具体作业阶段、行为变化与情绪变化见下一页“用户旅程”。</p>
 </section>
-<section class="page" id="journey"><div class="page-number" aria-label="第4页，共13页" contenteditable="false">04 / 13</div><div class="head"><div class="part">02 看用户</div><h1>被动补差型孩子的典型作业旅程</h1><div class="logo">步步高</div></div><div class=" point green"><b>整段旅程最高频痛点是“卡题”，孩子想要先给提示，知道下一步应该怎么做，最终自己把题目做出来。</b></div>
-<div class="journey-legend"><span><b>5/5</b> 样本覆盖</span><span class="journey-key">关键低谷：遇到卡题</span><span>↻ 卡题可能反复发生</span></div>
+<section class="page" id="journey"><div class="page-number" aria-label="第4页，共13页" contenteditable="false">04 / 13</div><div class="head"><div class="part">02 看用户</div><h1>被动补差型孩子的典型作业旅程</h1><div class="logo">步步高</div></div><div class=" point green"><b>作业前很难坐下开始，作业中卡题后不知道下一步，作业后写完不主动检查——三个核心痛点贯穿这段作业旅程。</b></div>
+<div class="journey-legend"><span class="journey-core">① 开始难</span><span class="journey-core">② 卡题不知道下一步</span><span class="journey-core">③ 写完不会检查</span><span>↻ 卡题在一次作业中可能反复出现</span></div>
 <div class="journey-wrap"><div class="journey-map">
-<div class="corner">维度 / 阶段</div><div class="stage"><small>作业前 ①</small>确认作业</div><div class="stage"><small>作业前 ②</small>坐下开始</div><div class="stage"><small>作业中 ③</small>持续完成</div><div class="stage key-stage"><small>作业中 ④ · 反复发生</small>遇到卡题 ↻</div><div class="stage"><small>作业后 ⑤</small>写完检查</div><div class="stage"><small>作业后 ⑥</small>错题订正</div>
+<div class="corner">维度 / 阶段</div><div class="stage"><small>作业前 ①</small>确认作业</div><div class="stage core-stage"><small>作业前 ② · 核心痛点</small>坐下开始</div><div class="stage"><small>作业中 ③</small>持续完成</div><div class="stage key-stage"><small>作业中 ④ · 核心痛点</small>遇到卡题 ↻</div><div class="stage core-stage"><small>作业后 ⑤ · 核心痛点</small>写完检查</div><div class="stage"><small>作业后 ⑥</small>错题订正</div>
 <div class="rowhead">孩子行为</div><div>翻登记本、班群和作业本，凭记忆确认任务；偶尔漏项或把作业忘在学校。</div><div>先玩、吃东西、找文具；妈妈叫几次后才慢慢坐到书桌前。</div><div>先挑会做的题；写着写着走神，看到长题、难题会停笔或跳过。</div><div class="key-cell">反复读题仍不动笔，空着等妈妈；或者打开搜题，看见答案后照着写。</div><div>写到最后一题就默认完成，等妈妈逐项核对并告诉自己哪里错了。</div><div>按妈妈指出的错题重做；不会时再听讲解，或直接把答案改对。</div>
 <div class="rowhead">孩子原话</div><div class="thought">“糟了，忘记语文作业了。”</div><div class="thought">“还没玩够。”<br>“不想写。”</div><div class="thought">“生字太多了，要写很久。”</div><div class="thought key-cell">“妈妈，这是什么意思？”<br>“妈妈我不会。”</div><div class="thought">“写完了，那不用检查了。”</div><div class="thought">“为什么我抄了还会错呢？”</div>
 <div class="rowhead">情绪变化</div><div class="emotion">😟 慌张 / 心虚</div><div class="emotion">😒 抗拒</div><div class="emotion">😣 分心 / 烦</div><div class="emotion key-cell">😫 困惑 → 烦躁 → 放弃</div><div class="emotion">😌 放松 / 急着结束</div><div class="emotion">😞 意外 / 懊恼</div>
-<div class="rowhead">痛点</div><div class="paincell">我没记清今天要写什么，有时还把作业忘在学校。</div><div class="paincell">我还想玩，很难坐下来；妈妈提醒、计时也不一定有用。</div><div class="paincell">我写着写着会分心；一看到长题、难题就不想继续了。</div><div class="paincell key-cell">我读了几遍还是不知道第一步做什么；妈妈讲我不一定听懂，搜题又直接看到答案。</div><div class="paincell">我觉得写完就是完成，不知道该检查哪里、怎么检查。</div><div class="paincell">我只知道把答案改对，却不知道为什么错、下次怎么做。</div>
+<div class="rowhead">痛点</div><div class="paincell">我没记清今天要写什么，有时还把作业忘在学校。</div><div class="paincell core-pain"><strong class="core-pain-label">① 我还没准备好开始</strong>我还想玩，很难坐下来；妈妈提醒、计时也不一定有用。</div><div class="paincell">我写着写着会分心；一看到长题、难题就不想继续了。</div><div class="paincell key-cell core-pain"><strong class="core-pain-label">② 我卡住时，不知道下一步</strong>我读了几遍还是不知道第一步做什么；妈妈讲我不一定听懂，搜题又直接看到答案。</div><div class="paincell core-pain"><strong class="core-pain-label">③ 我写完后，不会检查</strong>我觉得写完就是完成，不知道该检查哪里、怎么检查。</div><div class="paincell">我只知道把答案改对，却不知道为什么错、下次怎么做。</div>
 <div class="rowhead">现有应对</div><div class="coping">翻群消息、问同学或等妈妈确认。</div><div class="coping">妈妈催促、计时、陪到书桌前。</div><div class="coping">妈妈盯过程、提醒回到作业。</div><div class="coping key-cell">问妈妈、空着等人；或搜题、看完整讲解。</div><div class="coping">妈妈逐题核对，或用拍照批改找错。</div><div class="coping">重听讲解、重做或抄写正确答案。</div>
 <div class="rowhead">为什么没解决</div><div class="whycell">信息分散，仍靠孩子记忆和家长补漏。</div><div class="whycell">妈妈不在时难启动，催促还容易引发冲突。</div><div class="whycell">提醒只能暂时拉回，孩子仍不会自己维持节奏。</div><div class="whycell key-cell">要么讲不懂，要么直接给完整答案；孩子没有完成关键思考。</div><div class="whycell">错误由家长或工具发现，孩子没有学会检查方法。</div><div class="whycell">答案改对了，但错因和方法没有真正掌握。</div>
 <div class="rowhead">用户需求</div><div class="needcell">我希望一眼看清今天要写什么、要带什么，从而不漏作业、不反复找东西。</div><div class="needcell">我希望先从一件容易做的事开始，从而没那么抗拒写作业。</div><div class="needcell">我希望停下来时能知道下一步做什么，从而不用一直等妈妈提醒。</div><div class="needcell key-cell">我希望先给我提示，知道下一步应该怎么做，从而让我自己把题目做出来。</div><div class="needcell">我希望知道先检查哪几题、怎么检查，从而自己发现并改正问题。</div><div class="needcell">我希望弄明白为什么错、下次怎么做，从而不只把这次答案改对。</div>
