@@ -211,27 +211,24 @@ table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:15px}th{b
 .self-summary{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin:17px 0}.self-summary article{padding:17px 20px;background:#eef5ff;border-top:5px solid var(--blue)}.self-summary b{display:block;color:var(--blue);font-size:30px}.self-summary span{font-size:14px;font-weight:700}.self-funnel{display:grid;grid-template-columns:1fr 28px 1fr 28px 1fr 28px 1fr;gap:6px;align-items:center}.self-funnel article{min-height:112px;padding:16px;background:#eaf2ff;border-top:5px solid var(--blue)}.self-funnel article.last{background:#fff0e8;border-color:var(--orange)}.self-funnel strong{display:block;color:var(--blue);font-size:27px}.self-funnel .last strong{color:#c7522c}.self-funnel b{display:block;font-size:16px}.self-funnel small{font-size:12px;color:#66778a}.self-funnel i{font-style:normal;text-align:center;color:#8ea4bc;font-size:25px}.self-two{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-top:23px}.self-two>div{padding:20px;background:#f4f7fb}.self-two h3{font-size:19px;margin:0 0 14px}.self-two p{font-size:15px;line-height:1.65;margin:10px 0 0}.self-drag{display:flex;overflow:hidden;border-radius:5px}.self-drag span{display:flex;align-items:center;justify-content:center;min-height:49px;background:#2ca99b;color:#fff;text-align:center;font-size:13px;font-weight:800}.self-drag span:nth-child(2){background:#db8e3b}.self-drag span:nth-child(3){background:#a1afbd;font-size:11px}
 @media(max-width:1000px){.policy-sources,.tech-capabilities,.hint-ladder,.self-summary,.self-two,.ai-grid{grid-template-columns:1fr 1fr}.self-funnel{grid-template-columns:1fr}.self-funnel i{transform:rotate(90deg)}}
 @media print{.page{break-after:page}.industry-table td,.industry-table th{padding:6px 4px}.page-number{font-size:13px}}
-.idea-top{display:grid;grid-template-columns:1.16fr .84fr;gap:18px;margin-top:26px}
-.idea-top article{min-height:260px;padding:27px 30px;border-top:6px solid var(--blue);background:#f1f6fe}
-.idea-top .idea-belief{border-top-color:var(--orange);background:#fff5ee}
-.idea-label{display:block;color:var(--blue);font-size:17px;font-weight:900;letter-spacing:.04em}
-.idea-belief .idea-label{color:#b94a27}
-.idea-top h2{font-size:27px;line-height:1.48;margin:17px 0 13px;color:var(--deep)}
-.idea-position h2{font-size:34px;line-height:1.35;margin:20px 0;color:var(--blue)}
-.idea-belief h2{font-size:31px;color:#b94a27}
-.idea-top p{font-size:18px;line-height:1.6;margin:0;color:#425a74}
-.idea-principles-title{display:flex;align-items:baseline;gap:19px;margin:30px 0 16px;padding-bottom:10px;border-bottom:3px solid var(--blue)}
-.idea-principles-title p{margin:0;color:#52667e;font-size:17px}
-.idea-principles{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-.idea-principles article{min-height:188px;padding:21px 20px 17px;background:#f6f9fd;border-left:5px solid #88a9d5}
-.idea-principles article:nth-child(2){border-left-color:#2d87cf}
-.idea-principles article:nth-child(3){border-left-color:#13967e}
-.idea-principles article:nth-child(4){border-left-color:#e17a4e}
-.idea-principles article>span{font-size:14px;font-weight:900;color:var(--blue)}
-.idea-principles h3{font-size:22px;line-height:1.3;margin:8px 0 11px;color:var(--deep)}
-.idea-principles p{font-size:16px;line-height:1.55;margin:0;color:#4b6178}
-@media(max-width:1000px){.idea-top{grid-template-columns:1fr}.idea-principles{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:650px){.idea-principles{grid-template-columns:1fr}.idea-principles-title{display:block}.idea-principles-title p{margin-top:6px}}
+#idea{min-height:790px}
+#idea .head{margin-bottom:20px}
+.idea-label{display:flex;align-items:baseline;gap:13px;color:var(--blue);font-size:18px;font-weight:900}
+.idea-label small{font-size:14px;font-weight:700;color:#73839a}
+.idea-vision{padding:23px 29px 25px;background:#fff3ec;border-top:6px solid var(--orange)}
+.idea-vision .idea-label{color:#bf512d}
+.idea-vision h2{margin:12px 0 10px;color:#ad4625;font-size:31px;line-height:1.35}
+.idea-vision p{margin:0;color:#5d514c;font-size:18px;line-height:1.6}
+.idea-positioning{margin-top:18px;padding:23px 29px 24px;background:#f1f6fe;border-top:6px solid var(--blue)}
+.idea-positioning h2{margin:11px 0 18px;color:#0c3b79;font-size:27px;line-height:1.4}
+.idea-boundary-title{margin:0 0 11px;color:#0d3f7f;font-size:17px;font-weight:900}
+.idea-boundary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.idea-boundary article{padding:13px 15px;background:#fff;border-left:4px solid #2d79db}
+.idea-boundary b{display:block;color:#0755b2;font-size:15px;margin-bottom:6px}
+.idea-boundary p{margin:0;color:#334f6d;font-size:16px;line-height:1.45}
+.idea-family{margin:16px 0 0;padding:14px 17px;background:#e5f3ef;border-left:4px solid #17977d;color:#285c53;font-size:17px;line-height:1.5}
+.idea-family b{color:#08745e}
+@media(max-width:760px){.idea-boundary{grid-template-columns:1fr}.idea-vision h2{font-size:26px}.idea-positioning h2{font-size:23px}}
 
 /* 2026-10-08: explicit policy evidence and user-research prioritization */
 .policy-source-lead{margin:12px 0 0;color:#53677f;font-size:17px;line-height:1.5}
@@ -566,18 +563,9 @@ table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:15px}th{b
 <article class="map-branch self"><span>05 看自己</span><h2>有高频入口，也看见理解需求</h2><ul><li><b>已有入口</b>搜题高频，原题视频完整看完的比例低，拖动者选择性观看</li><li><b>行为信号</b>“为什么、步骤、看不懂”类追问可见；样本未区分孩子与家长</li></ul></article>
 </div><div class="map-arrow">↓</div>
 <div class="map-synthesis"><span>核心业务机会</span><b>被动补差孩子卡题时想自己接着做，现有方案却多给完整讲解；凭借搜题入口和分层提示基础，这是我们最有机会做好的场景。</b></div></section>
-<section class="page" id="idea"><div class="page-number" aria-label="第11页，共13页" contenteditable="false">11 / 13</div><div class="head"><div class="part">产品理念</div><h1>业务定位与做法</h1><div class="logo">步步高</div></div>
-<div class="idea-top">
-  <article class="idea-position"><span class="idea-label">01 业务定位</span><h2>帮孩子自己做下去的作业助手</h2><p>面向被动补差、缺少独立完成作业能力的孩子。作业前让任务清楚，卡题时给一点提示，做完后引导他自己检查；首期先从卡题验证。</p></article>
-  <article class="idea-belief"><span class="idea-label">02 产品理念</span><h2>让孩子在作业中获得胜任感，逐步实现自主学习</h2><p>孩子自己想、自己写、自己改；工具只在需要时给够用的帮助，让“这题是我做出来的”成为真实感受。</p></article>
-</div>
-<div class="idea-principles-title"><span class="idea-label">03 产品原则</span></div>
-<div class="idea-principles">
-  <article><span>01</span><h3>先听孩子要不要帮</h3><p>在孩子需要帮助时，先让他决定要不要介入；不靠催促把他推着走。</p></article>
-  <article><span>02</span><h3>先提示，别讲完</h3><p>先给能继续的一点提示；不够再多给一点，孩子会了就停。</p></article>
-  <article><span>03</span><h3>关键一步留给孩子</h3><p>理解题意、动笔、检查和订正由孩子做，工具不代写答案。</p></article>
-  <article><span>04</span><h3>看孩子能否自己做</h3><p>看提示后能否继续写、少看答案、少靠家长；不只看点击和完播。</p></article>
-</div></section>
+<section class="page" id="idea"><div class="page-number" aria-label="第11页，共13页" contenteditable="false">11 / 13</div><div class="head"><div class="part">业务定义</div><h1>长期价值与服务边界</h1><div class="logo">步步高</div></div>
+<div class="idea-vision"><div class="idea-label">01 业务理念 <small>长期要创造的价值</small></div><h2>让孩子在作业中获得胜任感，逐步实现自主学习。</h2><p>不是只让孩子更快把作业交掉，而是让他在一次次解决困难中，相信自己能学会、愿意继续独立完成。</p></div>
+<div class="idea-positioning"><div class="idea-label">02 业务定位 <small>服务谁、服务什么场景</small></div><h2>面向中小学生日常独立作业场景，帮助孩子自主完成作业的一体化作业支持服务。</h2><div class="idea-boundary-title">业务定位界定了业务边界</div><div class="idea-boundary"><article><b>核心用户</b><p>中小学生</p></article><article><b>核心场景</b><p>日常独立作业</p></article><article><b>服务目标</b><p>帮助孩子自主完成，而非替孩子完成</p></article></div><p class="idea-family"><b>家长是重要的协同受益方：</b>孩子更能自主完成，家长更少陷入陪写和催促。</p></div></section>
 <section class="page" id="framework"><div class="page-number" aria-label="第12页，共13页" contenteditable="false">12 / 13</div><div class="head"><div class="part">业务框架</div><h1>服务范围与帮助机制</h1><div class="logo">步步高</div></div>
 <div class="bf-wrap"><div class="bf-banner"><h2>作业前、中、后都按一个办法帮孩子：看他需要什么，帮一点，再让他自己做；先从卡题试起。</h2></div>
  <div class="bf-main">
